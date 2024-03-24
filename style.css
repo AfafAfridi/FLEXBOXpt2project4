@@ -1,0 +1,53 @@
+
+  /* Styling for the flex container */
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    width: 800px; /* Set a fixed width to showcase wrapping */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 2px solid #333; /* Add border for visualization */
+    padding: 10px; /* Add some padding */
+  }
+  
+  /* Styling for flex items */
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Background colors are assigned to each item */
+  .item1 { background-color: #FF5733; }
+  .item2 { background-color: #FFC300; }
+  .item3 { background-color: #DAF7A6; }
+  .item4 { background-color: #9AECDB; }
+  .item5 { background-color: #A3B2FF; }
+  
+  
+  /* Flex-grow values are also manually assigned */
+  .item6 { background-color: #FF5733; flex-grow: 1; }
+  .item7 { background-color: #FFC300; flex-grow: 2; }
+  .item8 { background-color: #DAF7A6; flex-grow: 3; }
+  .item9 { background-color: #9AECDB; flex-grow: 1; }
+  .item10 { background-color: #A3B2FF; flex-grow: 3; }
+
+  /* Media query for responsiveness */
+  @media screen and (max-width: 800px) {
+    .container {
+      width: 300px; /* Adjust container width for smaller screens */
+      background-color: lightgreen; /* Change background color on smaller screens */
+    }
+
+    .item {
+      width: 80px; /* Adjust item width for smaller screens */
+      height: 80px; /* Adjust item height for smaller screens */
+      font-size: 12px; /* Adjust font size for smaller screens */
+    } 
